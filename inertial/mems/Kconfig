@@ -1,0 +1,18 @@
+config LIB_MEMS
+    bool "mems board app"
+    default n
+
+config LIB_MEMS_PROGNAME
+    string "Program name"
+    default "mems"
+    depends on LIB_MEMS
+
+config LIB_MEMS_PRIORITY
+    int "mems task priority"
+    default 100
+    depends on LIB_MEMS
+
+config LIB_MEMS_STACKSIZE
+    int "mems stack size"
+    default 4096
+    depends on LIB_MEMS

@@ -1,0 +1,3 @@
+ifneq ($(CONFIG_LIB_MEMS),)
+CONFIGURED_APPS += $(APPDIR)/inertial/mems
+endif
